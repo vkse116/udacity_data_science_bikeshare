@@ -1,14 +1,16 @@
+
 import time
 import pandas as pd
 import numpy as np
 
+# Dictionary for csv files
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
 def get_filters():
     """
-    Asks user to specify a city, month, and day to analyze.
+    Asks user to specify a City, Month, and Day to analyze.
 
     Returns:
         (str) city - name of the city to analyze
@@ -90,7 +92,7 @@ def load_data(city, month, day):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """Displays Statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -156,7 +158,7 @@ def trip_duration_stats(df):
 
 
 def user_stats(df):
-    """Displays statistics on bikeshare users."""
+    """Displays statistics on bikeshare users..."""
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -197,6 +199,8 @@ def user_stats(df):
 
 
 def main():
+
+    # Loop for iteratate through the project
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
