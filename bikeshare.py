@@ -158,7 +158,7 @@ def trip_duration_stats(df):
 
 
 def user_stats(df):
-    """Displays statistics on bikeshare users."""
+    """Displays statistics on bikeshare users..."""
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -200,7 +200,7 @@ def user_stats(df):
 
 def main():
 
-    # while loop for iteratate through the project
+    # Loop for iteratate through the project
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
