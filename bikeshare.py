@@ -202,8 +202,8 @@ def main():
 
     # Loop for iteratate through the project
     while True:
-        City, Month, Day = get_filters()
-        df = load_data(City, Month, Day)
+        city, month, day = get_filters()
+        df = load_data(city, month, day)
 
         time_stats(df)
         station_stats(df)
